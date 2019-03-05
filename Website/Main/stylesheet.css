@@ -1,0 +1,13 @@
+html{
+	width: 100%;
+}
+body{
+	width: 100%;
+	background-color: #1ba8f0;
+	font-family: 'Ubuntu';
+}
+#pageTitle {
+	font-size: 10vw;
+	color: #f9f9f9;
+	text-align: center;
+}
