@@ -13,7 +13,11 @@
         </h1>
     </div>
     <div id="contentsDiv">
-        <button id="defaultButton">login</button>
+        <input type="text" id="usernameInputfield"><br/>
+        <input type="text" id="emailInputfield"><br/>
+        <input type="text" id="passwordInputfield1"><br/>
+        <input type="text" id="passwordInputfield2"><br/>
+        <button id="defaultButton">Register</button>
     </div>
 </body>
 </html>
