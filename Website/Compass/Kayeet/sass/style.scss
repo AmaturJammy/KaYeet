@@ -53,7 +53,7 @@ body {
     height: 15%;
 }
 
-#defaultButton{
+.defaultButton{
     border-style: none;
     background-color: #333333;
     color: #f9f9f9;
@@ -62,7 +62,8 @@ body {
     height: 15%; 
 }
 
-#usernameInputfield{
+.defaultInputfield{
+    padding-left: 2%;
     border-style: none;
     font-size: 2em;
     width: 90%;
@@ -70,26 +71,6 @@ body {
 
 }
 
-#emailInputfield{
-    border-style: none;
-    font-size: 2em;
-    width: 90%;
-    height: 15%; 
-}
-
-#passwordInputfield1{
-    border-style: none;
-    font-size: 2em;
-    width: 90%;
-    height: 15%; 
-}
-
-#passwordInputfield2{
-    border-style: none;
-    font-size: 2em;
-    width: 90%;
-    height: 15%;
-}
 @media only screen and (min-width: 480px) {
     #pageTitle {
         font-size: 100px;
@@ -106,27 +87,12 @@ body {
         width: 50%;
         height: 25%;
     }
-    #defaultButton{
+    .defaultButton{
         font-size: 2em;
         width: 50%;
         height: 25%; 
     }
-    #usernameInputfield{
-        font-size: 2em;
-        width: 50%;
-        height: 25%;
-    }
-    #emailInputfield{
-        font-size: 2em;
-        width: 50%;
-        height: 25%;
-    }
-    #passwordInputfield1{
-        font-size: 2em;
-        width: 50%;
-        height: 25%;
-    }
-    #passwordInputfield2{
+    .defaultInputfield{
         font-size: 2em;
         width: 50%;
         height: 25%;
@@ -149,27 +115,12 @@ body {
         width: 80%;
         height: 15%;
     }
-    #defaultButton{
+    .defaultButton{
         font-size: 4em;
         width: 80%;
         height: 15%;
     }
-    #usernameInputfield{
-        font-size: 4em;
-        width: 80%;
-        height: 15%;
-    }
-    #emailInputfield{
-        font-size: 4em;
-        width: 80%;
-        height: 15%;
-    }
-    #passwordInputfield1{
-        font-size: 4em;
-        width: 80%;
-        height: 15%;
-    }
-    #passwordInputfield2{
+    .defaultInputfield{
         font-size: 4em;
         width: 80%;
         height: 15%;
@@ -192,30 +143,16 @@ body {
         width: 50%;
         height: 25%;
     }
-    #defaultButton{
+    .defaultButton{
         font-size: 2em;
         width: 50%;
         height: 25%;
     }
-    #usernameInputfield{
+    .defaultInputfield{
         font-size: 2em;
         width: 50%;
         height: 25%;
-    }
-    #emailInputfield{
-        font-size: 2em;
-        width: 50%;
-        height: 25%;
-    }
-    #passwordInputfield1{
-        font-size: 2em;
-        width: 50%;
-        height: 25%;
-    }
-    #passwordInputfield2{
-       font-size: 2em;
-        width: 50%;
-        height: 25%;
+        outline: none;
     }
 }
 
@@ -235,27 +172,12 @@ body {
         width: 50%;
         height: 20%;
     }
-    #defaultButton{
-       font-size: 3em;
-        width: 50%;
-        height: 20%;
-    }
-    #usernameInputfield{
+    .defaultButton{
         font-size: 3em;
         width: 50%;
         height: 20%;
     }
-    #emailInputfield{
-       font-size: 3em;
-        width: 50%;
-        height: 20%;
-    }
-    #passwordInputfield1{
-        font-size: 3em;
-        width: 50%;
-        height: 20%;
-    }
-    #passwordInputfield2{
+    .defaultInputfield{
         font-size: 3em;
         width: 50%;
         height: 20%;

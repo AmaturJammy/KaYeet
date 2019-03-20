@@ -14,11 +14,11 @@
     </div>
     <div id="contentsDiv">
          <form method="post">
-            <input type="text" placeholder="Gebruikersnaam" id="usernameInputfield" name="screenName" <?php if(isset($screenName)){echo('value='.$screenName);}?>><br>
-            <input type="email" placeholder="E-Mail" id="emailInputfield" name="email" <?php if(isset($email)){echo('value='.$email);}?>><br>
-            <input type="password"  placeholder="Wachtwoord" id="passwordInputfield1" name="password"><br>
-            <input type="password"  placeholder="Bevestig WW" id="passwordInputfield2" name="confirmPassword"><br>
-            <input type="submit" id="defaultButton" name="submitRegistration" value="Registreren">
+            <input type="text" required placeholder="Naam:" class="defaultInputfield" name="screenName" <?php if(isset($screenName)){echo('value='.$screenName);}?>><br>
+            <input type="email" required placeholder="E-Mail:" class="defaultInputfield" name="email" <?php if(isset($email)){echo('value='.$email);}?>><br>
+            <input type="password" required placeholder="Wachtwoord:" class="defaultInputfield" name="password"><br>
+            <input type="password" required placeholder="Bevestig WW:" class="defaultInputfield" name="confirmPassword"><br>
+            <input type="submit" required class="defaultButton" name="submitRegistration" value="Registreer">
         </form>
     </div>
 </body>
