@@ -1,3 +1,6 @@
+
+$fontsize: 1.375em;
+
 html {
     width: 100%;
 }
@@ -37,7 +40,7 @@ body {
     border-style: none;
     background-color: #333333;
     color: #f9f9f9;
-    font-size: 2em;
+    font-size: $fontsize;
     width: 90%;
     height: 15%;
     margin-bottom: 20%;
@@ -48,7 +51,7 @@ body {
     border-style: none;
     background-color: #333333;
     color: #f9f9f9;
-    font-size: 2em;
+    font-size: $fontsize;
     width: 90%;
     height: 15%;
 }
@@ -57,17 +60,14 @@ body {
     border-style: none;
     background-color: #333333;
     color: #f9f9f9;
-    font-size: 2em;
-    width: 90%;
-    height: 15%; 
+    font-size: $fontsize;
+    padding: 5% 5%;
 }
 
 .defaultInputfield{
-    padding-left: 2%;
-    border-style: none;
-    font-size: 2em;
-    width: 90%;
-    height: 15%;
+    margin-bottom: 10px;
+    font-size: $fontsize;
+    padding: 5% 5%;
 
 }
 
@@ -76,26 +76,21 @@ body {
         font-size: 100px;
     }
     #joinButton {
-        font-size: 2em;
+        font-size: $fontsize;
         width: 50%;
         height: 25%;
         margin-bottom: 7%;
         margin-top: 7%;
     }
     #loginButton {
-        font-size: 2em;
+        font-size: $fontsize;
         width: 50%;
         height: 25%;
     }
     .defaultButton{
-        font-size: 2em;
+        font-size: $fontsize;
         width: 50%;
         height: 25%; 
-    }
-    .defaultInputfield{
-        font-size: 2em;
-        width: 50%;
-        height: 25%;
     }
 }
 
@@ -104,24 +99,19 @@ body {
         font-size: 200px;
     }
     #joinButton {
-        font-size: 4em;
-        width: 60%;
+        font-size: $fontsize;
+        width: 80%;
         height: 15%;
         margin-bottom: 20%;
         margin-top: 25%;
     }
     #loginButton {
-        font-size: 4em;
+        font-size: $fontsize;
         width: 80%;
         height: 15%;
     }
     .defaultButton{
-        font-size: 4em;
-        width: 80%;
-        height: 15%;
-    }
-    .defaultInputfield{
-        font-size: 4em;
+        font-size: $fontsize;
         width: 80%;
         height: 15%;
     }
@@ -132,27 +122,21 @@ body {
         font-size: 100px;
     }
     #joinButton {
-        font-size: 2em;
+        font-size: $fontsize;
         width: 50%;
         height: 25%;
         margin-bottom: 7%;
         margin-top: 7%;
     }
     #loginButton {
-        font-size: 2em;
+        font-size: $fontsize;
         width: 50%;
         height: 25%;
     }
     .defaultButton{
-        font-size: 2em;
+        font-size: $fontsize;
         width: 50%;
         height: 25%;
-    }
-    .defaultInputfield{
-        font-size: 2em;
-        width: 50%;
-        height: 25%;
-        outline: none;
     }
 }
 
@@ -161,24 +145,19 @@ body {
         font-size: 125px;
     }
     #joinButton {
-        font-size: 3em;
+        font-size: $fontsize;
         width: 50%;
         height: 20%;
         margin-bottom: 7%;
         margin-top: 10%;
     }
     #loginButton {
-        font-size: 3em;
+        font-size: $fontsize;
         width: 50%;
         height: 20%;
     }
     .defaultButton{
-        font-size: 3em;
-        width: 50%;
-        height: 20%;
-    }
-    .defaultInputfield{
-        font-size: 3em;
+        font-size: $fontsize;
         width: 50%;
         height: 20%;
     }
