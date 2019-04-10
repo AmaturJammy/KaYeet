@@ -37,34 +37,34 @@ if(isset($_POST['submitRegistration'])){
 }
 ?>
 <html>
-    <body>
-        <div id="titleDiv">
-            <h1 id="pageTitle">
-                KaYeet
-            </h1>
-        </div>
-        <form method="post">
-        <div id="contentsDiv">
-                <input name="screenName" required='' type='text'>
-                <label alt='Gebruiksnaam' placeholder='Kies een gebruiksnaam' id="usernameInputfield" <?php if(isset($screenName)){echo('value='.$screenName);}?>></label>
-                <input name="email" required='' type='text'>
-                <label alt='Email' placeholder='Typ je e-mail' id="emailInputfield" <?php if(isset($email)){echo('value='.$email);}?>></label>
-                <input name="password" class="password" required='' type='password'>
-                <label alt='Wachtwoord' placeholder='Verzin een wachtwoord'></label>
-                <input name="confirmPassword" class="password" required='' type='password'>
-                <label alt='Herhaal wachtwoord' placeholder='Herhaal je wachtwoord'></label>
-        </div>
-        <div class="buttonDiv">
-                <input type="submit" class="btn-hover color-1" name="submitRegistration" value="Registreren">
-                <button class="btn-hover color-1" onclick="location.href='loginPage.php'">Login?</button> 
-        </div>
-            <?php echo("<center><p style='color:#fff;'>". $message. "</p></center>");?>
 <head>
     <title>KaYeet | Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="/Kayeet/Resources/stylesheets/stylesheet.css">
 </head>
+<body>
+    <div id="titleDiv">
+        <h1 onclick="location.href='control.php'" id="pageTitle">
+            KaYeet
+        </h1>
+    </div>
+    <form method="post">
+    <div id="contentsDiv">
+            <input name="screenName" required='' type='text'>
+            <label alt='Gebruiksnaam' placeholder='Kies een gebruiksnaam' id="usernameInputfield" <?php if(isset($screenName)){echo('value='.$screenName);}?>></label>
+            <input name="email" required='' type='text'>
+            <label alt='Email' placeholder='Typ je e-mail' id="emailInputfield" <?php if(isset($email)){echo('value='.$email);}?>></label>
+            <input name="password" class="password" required='' type='password'>
+            <label alt='Wachtwoord' placeholder='Verzin een wachtwoord'></label>
+            <input name="confirmPassword" class="password" required='' type='password'>
+            <label alt='Herhaal wachtwoord' placeholder='Herhaal je wachtwoord'></label>
+    </div>
+    <div class="buttonDiv">
+            <input type="submit" class="btn-hover color-1" name="submitRegistration" value="Registreren">
+            <button class="btn-hover color-1" onclick="location.href='loginPage.php'">Login?</button> 
+    </div>
+    <?php echo("<center><p style='color:#fff;'>". $message. "</p></center>");?>
     </form>
-    </body>
+</body>
 </html>

@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="titleTextDiv">
-        <h1 id="pageTitle">
+        <h1 onclick="location.href='control.php'" id="pageTitle">
             KaYeet
         </h1><br><br><br>
         <h1 id="scoreText">Endscore</h1>

@@ -26,30 +26,30 @@ if(isset($_POST['submitinlog'])){
 
 ?>
 <html>
-    <body>
-        <div id="titleDiv">
-            <h1 id="pageTitle">
-                KaYeet
-            </h1>
 <head>
     <title>KaYeet | Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="Resources/stylesheets/stylesheet.css">
 </head>
+<body>
+    <div id="titleDiv">
+        <h1 onclick="location.href='control.php'" id="pageTitle">
+            KaYeet
+        </h1>
+    </div>
+    <form method="post">
+        <div id="contentsDiv">
+            <input required name="email" type='text'>
+            <label alt='Email' placeholder='Typ je e-mail'></label>
+            <input class="password" name="password" required type='password'>
+            <label alt='Wachtwoord' placeholder='Verzin een wachtwoord'></label>
         </div>
-        <form method="post">
-            <div id="contentsDiv">
-                <input required name="email" type='text'>
-                <label alt='Email' placeholder='Typ je e-mail'></label>
-                <input class="password" name="password" required type='password'>
-                <label alt='Wachtwoord' placeholder='Verzin een wachtwoord'></label>
-            </div>
-            <div class="buttonDiv">
-                <button class="btn-hover color-1" onclick="location.href='registerPage.php'">Registreren</button>
-                <input type="submit" name="submitinlog" class="btn-hover color-1" value="Inloggen">
-            </div>
-            <?php echo("<center><p style='color:#fff;'>". $message. "</p></center>");?>
-        </form>
-    </body>
+        <div class="buttonDiv">
+            <button class="btn-hover color-1" onclick="location.href='registerPage.php'">Registreren</button>
+            <input type="submit" name="submitinlog" class="btn-hover color-1" value="Inloggen">
+        </div>
+        <?php echo("<center><p style='color:#fff;'>". $message. "</p></center>");?>
+    </form>
+</body>
 </html>

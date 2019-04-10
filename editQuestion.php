@@ -42,7 +42,7 @@ if(isset($_POST['editQuestion'])){
 </head>
 <body>
     <div id="titleTextDiv">
-        <h1 id="pageTitle">
+        <h1 onclick="location.href='control.php'" id="pageTitle">
             KaYeet
         </h1>
     </div>

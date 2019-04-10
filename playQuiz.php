@@ -42,7 +42,7 @@ $quiz_id = $_GET['QuizID'];
 </head>
 <body>
     <div id="titleTextDiv">
-        <h1 id="pageTitle">
+        <h1 onclick="location.href='control.php'" id="pageTitle">
             KaYeet
         </h1>
     </div>
