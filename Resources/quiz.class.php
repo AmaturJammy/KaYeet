@@ -247,10 +247,9 @@ class Quiz{
         }
         $quizes = $this->db->run("SELECT * FROM quiz WHERE UserID=?", [$userID])->fetchAll();
         foreach($quizes as $quiz){
-            echo("<div style='float:left;background-color:#12464f;color:#fff;width:40%;height:20%;padding:1%;margin:1%;font-size:1.5em;text-align:center;'>");
+            echo("<a href='editQuiz.php?QuizID=".$quiz['QuizID']."'><div class='quizboxdiv color-2'>");
             echo($quiz["QuizName"]. "<br><br>");
-            echo("<a style='color:#fff;' href='editQuiz.php?QuizID=".$quiz['QuizID']."'>Verander vraag</a><br>");
-            echo("<a style='color:#fff;' href='playQuiz.php?QuizID=".$quiz['QuizID']."'>Speel quiz</a><br>");
+            //echo("<a style='color:#fff;' href='playQuiz.php?QuizID=".$quiz['QuizID']."'>Speel quiz</a><br>");
             echo("</div>");
         }
     }

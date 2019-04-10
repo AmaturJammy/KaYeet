@@ -350,6 +350,47 @@ input[type="password"][required] + label[placeholder]:before {
     display: none;
   }
 
+/*giving "quizboxdivs" "gradienttransition" doesn't work yet*/ 
+
+  /*"moz-transition: all .4s ease-in-out;" gives an error, so i commented it out //@jammy*/
+  .quizboxdiv {
+    width:40%;
+    height:20%;
+    font-size:2.5em;
+    color:#fff;
+    cursor: pointer;
+    margin:1%;
+    padding:1%;
+    margin-left:5%;
+    float:left;
+    text-align:center;
+
+    background-color: #22464f;
+    /*moz-transition: all .4s ease-in-out;* /
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+*/    
+  }
+
+  /*"moz-transition: all .4s ease-in-out;" gives an error, so i commented it out //@jammy* /
+  .quizboxdiv:hover {
+    background-position: 100% 0;
+    /*moz-transition: all .4s ease-in-out;* /
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .quizboxdiv:focus {
+    outline: none;
+  } 
+
+  .quizboxdiv.color-1 {
+    background-image: linear-gradient(to right, #19a2e8, #1480b7, #093e59, #333333);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  }
+*/
   /* line 291, ../sass/stylesheet.scss */
   #loginregistreer {
     position: absolute;
