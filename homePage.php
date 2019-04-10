@@ -7,6 +7,7 @@
     <script type="text/javascript" src="Resources/javascript/script.js"></script>
 </head>
 <body>
+    <script>playmusic();</script>
     <div id="titleTextDiv">
         <h1 onclick="location.href='control.php'" id="pageTitle">
             KaYeet
