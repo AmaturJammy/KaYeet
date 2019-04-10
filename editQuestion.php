@@ -3,6 +3,7 @@ require_once('config.php');
 $quiz = new Quiz();
 $user = new User();
 $logged_in = $user->checkLogin();
+$question_id = $_GET['QuestionID'];
 if(!$logged_in){
     header("Location: homePage.php");
 }
@@ -34,7 +35,7 @@ if(isset($_POST['editQuestion'])){
 ?>
 <html>
 <head>
-	<title>KaYeet</title>
+	<title><?php echo "KaYeet | Edit Question ".$question_id. `.<br />`; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="/Kayeet/Resources/stylesheets/stylesheet.css">

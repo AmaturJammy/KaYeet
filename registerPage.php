@@ -37,12 +37,6 @@ if(isset($_POST['submitRegistration'])){
 }
 ?>
 <html>
-    <head>
-        <title>KaYeet</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-        <link rel="stylesheet" type="text/css" href="/Kayeet/Resources/stylesheets/stylesheet.css">
-    </head>
     <body>
         <div id="titleDiv">
             <h1 id="pageTitle">
@@ -65,6 +59,12 @@ if(isset($_POST['submitRegistration'])){
                 <button class="btn-hover color-1" onclick="location.href='loginPage.php'">Login?</button> 
         </div>
             <?php echo("<center><p style='color:#fff;'>". $message. "</p></center>");?>
+<head>
+    <title>KaYeet | Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/Kayeet/Resources/stylesheets/stylesheet.css">
+</head>
     </form>
     </body>
 </html>

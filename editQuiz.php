@@ -14,14 +14,14 @@ if(isset($_GET['QuizID'])){
 }else{
     $quizname = $quiz->getQuiz(0)['QuizName'];
 }
+if(array_key_exists('QuizID', $_GET)){
+    $quiz_id = $_GET['QuizID'];
+    $title = "KaYeet | Edit Quiz $quiz_id";
+}else{
+    $title = "KaYeet | Edit new Quiz";
+}
 ?>
 <html>
-    <head>
-        <title>KaYeet</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-        <link rel="stylesheet" type="text/css" href="/Kayeet/Resources/stylesheets/stylesheet.css">
-    </head>
     <body>
         <div id="titleTextDiv">
             <h1 id="pageTitle">
@@ -45,4 +45,10 @@ if(isset($_GET['QuizID'])){
             ?>
         </div>
     </body>
+<head>
+    <title><?php echo $title; ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/Kayeet/Resources/stylesheets/stylesheet.css">
+</head>
 </html>

@@ -1,11 +1,5 @@
 
 <html>
-    <head>
-        <title>KaYeet</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-        <link rel="stylesheet" type="text/css" href="Resources/stylesheets/stylesheet.css">
-    </head>
     <body>
         <div id="titleDiv">
             <h1 id="pageTitle">
@@ -22,4 +16,10 @@
         </div>
         <button onclick="location.href='homePage.php'" id="loginregistreer" class="btn-hover color-1">Login/Registreer</button>
     </body>
+<head>
+    <title>KaYeet | Join</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="Resources/stylesheets/stylesheet.css">
+</head>
 </html>
