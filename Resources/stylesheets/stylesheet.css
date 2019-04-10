@@ -346,6 +346,10 @@ input[type="password"][required] + label[placeholder]:before {
     width: 60%;
   }
 
+  #formDiv {
+    display: none;
+  }
+
   /* line 291, ../sass/stylesheet.scss */
   #loginregistreer {
     position: absolute;
