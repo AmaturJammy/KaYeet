@@ -7,5 +7,13 @@ document.write('<!--[if lt IE 9]>');
 document.write('<bgsound src="'+mp3snd+'" loop="1">');
 document.write('<![endif]-->');
 document.write('</audio>');
+function toggleForm() {
+    var x = document.getElementById("formDiv");
+    if(x.style.display === "none") {
+        x.style.display = "block";
+    }else{
+        x.style.display = "none";
+    }
+}
 
 document.getElementById("musicplayer").loop = true;

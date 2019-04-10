@@ -36,20 +36,22 @@ if(array_key_exists('QuizID', $_GET)){
         </h1>
     </div>
     <div id="contentsDiv">
-        <form method="post">
-            <label for="quizname">Quiz name</label><br>
-            <input type="text" name="quizname" placeholder="Quiz name" value="<?php echo($quizname); ?>"><br>
-            <h2>Add a question</h2>
-            <input type="text" name="questionText" placeholder="Question name"><br>
-            <input type="text" name="answer1" placeholder="Answer 1" style="width:95%;"><input type="checkbox" name="answer1check"><br>
-            <input type="text" name="answer2" placeholder="Answer 2" style="width:95%;"><input type="checkbox" name="answer2check"><br>
-            <input type="text" name="answer3" placeholder="Answer 3" style="width:95%;"><input type="checkbox" name="answer3check"><br>
-            <input type="text" name="answer4" placeholder="Answer 4" style="width:95%;"><input type="checkbox" name="answer4check"><br>
-            <input type="submit" class="btn-hover color-1" name="addNewQuestion" value="Vraag toevoegen">
-        </form>
-        <?php
-        $quiz->showEditQuestions();
-        ?>
+        <button class="btn-hover color-1" onclick="location.href='playQuiz.php?QuizID=<?php echo $quiz_id; ?>'">Speel deze quiz nu</button>
+        <button onclick="toggleForm()" class="btn-hover color-1">Add a question</button><br> 
+        <div id="formDiv">   
+            <form method="post">
+                <label for="quizname">Quiz name</label><br>
+                <input type="text" name="quizname" placeholder="Quiz name" value="<?php echo($quizname); ?>"><br>
+                <h2>Add a question</h2>
+                <input type="text" name="questionText" placeholder="Question name"><br>
+                <input type="text" name="answer1" placeholder="Answer 1" style="width:95%;"><input type="checkbox" name="answer1check"><br>
+                <input type="text" name="answer2" placeholder="Answer 2" style="width:95%;"><input type="checkbox" name="answer2check"><br>
+                <input type="text" name="answer3" placeholder="Answer 3" style="width:95%;"><input type="checkbox" name="answer3check"><br>
+                <input type="text" name="answer4" placeholder="Answer 4" style="width:95%;"><input type="checkbox" name="answer4check"><br>
+                <input type="submit" class="btn-hover color-1" name="addNewQuestion" value="Vraag toevoegen">
+            </form>
+        </div>
+            <?php $quiz->showEditQuestions(); ?>
     </div>
 </body>
 </html>
