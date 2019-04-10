@@ -25,7 +25,7 @@ if(!$logged_in){
         </h1>
     </div>
     <div id="contentsDiv">
-        <button class="btn-hover color-1" onclick="location.href='createQuiz.php'">Create quiz</button><br>
+        <button class="btn-hover color-1" onclick="location.href='createQuiz.php'">Create quiz</button>
         <button class="btn-hover color-1" onclick="location.href='logout.php'">Logout</button><br>
         <?php $quiz->showQuizes(); ?>
     </div>
