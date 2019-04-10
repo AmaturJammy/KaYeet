@@ -213,6 +213,7 @@ input[type="password"][required] + label[placeholder]:before {
     box-sizing: border-box;
 }
 
+/*"moz-transition: all .4s ease-in-out;" gives an error, so i commented it out //@jammy*/
 .btn-hover {
     width: 200px;
     font-size: 16px;
@@ -224,17 +225,17 @@ input[type="password"][required] + label[placeholder]:before {
     text-align:center;
     border: none;
     background-size: 300% 100%;
-
     border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
+    /*moz-transition: all .4s ease-in-out;*/
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 
+/*"moz-transition: all .4s ease-in-out;" gives an error, so i commented it out //@jammy*/
 .btn-hover:hover {
     background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
+    /*moz-transition: all .4s ease-in-out;*/
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
